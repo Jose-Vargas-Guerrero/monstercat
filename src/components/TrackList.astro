@@ -1,0 +1,140 @@
+---
+
+---
+
+<div class="track-container">
+  <h2 class="track-title">TRACK LIST</h2>
+  <div class="row">
+    <p>1</p>
+    <div class="audio">
+      <audio controls>
+        <source src="../../src/music/smartThings.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+    <div class="title">The Small Things</div>
+    <div class="time">3:35</div>
+    <div><i class="fa-solid fa-share"></i></div>
+  </div>
+  <div class="row">
+    <p>2</p>
+    <div class="audio">
+      <audio controls>
+        <source src="../../src/music/withoutlove.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+    <div class="title">Witouth Your Love</div>
+    <div class="time">3:35</div>
+    <div><i class="fa-solid fa-share"></i></div>
+  </div>
+  <div class="row">
+    <p>3</p>
+    <div class="audio">
+      <audio controls>
+        <source src="../../src/music/therapy.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+    <div class="title">Therapy</div>
+    <div class="time">3:35</div>
+    <div><i class="fa-solid fa-share"></i></div>
+  </div>
+  <div class="row">
+    <p>4</p>
+    <div class="audio">
+      <audio controls>
+        <source src="../../src/music/fighters.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+    <div class="title">Fighters</div>
+    <div class="time">3:35</div>
+    <div><i class="fa-solid fa-share"></i></div>
+  </div>
+  <div class="row">
+    <p>5</p>
+    <div class="audio">
+      <audio controls>
+        <source src="../../src/music/onmyway.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+    <div class="title">Way Up</div>
+    <div class="time">3:35</div>
+    <div><i class="fa-solid fa-share"></i></div>
+  </div>
+</div>
+
+<style>
+  .track-container {
+    color: #fdfdfd;
+    height: 100vh;
+    max-width: 100vw;
+    padding: 0 150px;
+  }
+
+  .track-title {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .row {
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .track-container p,
+  .title,
+  .time,
+  .fa-share {
+    margin: 1rem 1rem;
+  }
+
+  .audio {
+    margin: 1rem 20%;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .track-container {
+      padding-top: 200px;
+      color: #fdfdfd;
+      height: auto;
+      max-width: 100vw;
+      padding: 0 0px;
+    }
+
+    .track-title {
+      font-size: 2rem;
+      letter-spacing: 3px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .row {
+      height: auto;
+      margin: 1.2rem 0;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .track-container p,
+    .title,
+    .time,
+    .fa-share {
+      margin: 1rem 1rem;
+    }
+
+    .fa-share {
+      display: none;
+    }
+
+    .audio {
+      margin: 1rem 20%;
+    }
+  }
+</style>

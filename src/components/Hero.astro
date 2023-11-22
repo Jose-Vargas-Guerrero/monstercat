@@ -1,0 +1,229 @@
+---
+
+---
+
+<div class="hero-container">
+  <div class="hero-content">
+    <img
+      class="album"
+      src="https://cdx.monstercat.com/resized/8a169d846576fcdad7a0a6e04d371eb05b2a9397/600.webp"
+    />
+    <div class="album-text">
+      <h1>LEVEL DAYS</h1>
+      <h2>CONRO</h2>
+    <div>
+      <button class="play"> <i class="fa-solid fa-play"></i> LISTEN NOW</button>
+      <button class="share"><i class="fa-solid fa-share"></i> SHARE</button>
+    </div>
+  </div>
+    </div>
+</div>
+
+<style>
+  /* styles from the hero section gradient and blur */
+  
+  
+  .hero-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+      linear-gradient(to bottom, transparent, rgba(0, 0, 0, 10)),
+      url("https://cdx.monstercat.com/resized/8a169d846576fcdad7a0a6e04d371eb05b2a9397/600.webp")
+        center/cover;
+    filter: blur(4px);
+    z-index: -1;
+  }
+
+  .hero-container img,
+  .hero-container h1,
+  .hero-container h2,
+  .hero-container button {
+    position: relative;
+    z-index: 1;
+  }
+
+  .album{
+    height: 450px;
+    width: 450px;
+  }
+
+  .hero-content{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15%;
+  }
+
+  .album-text{
+    padding: 0 2%;
+    width: auto;
+    margin: 0 0 0 5%;
+  }
+
+  .album-text h1{
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    color:#fdfdfd;
+  }
+
+  .album-text h2{
+    font-weight: bold;
+    font-size: 2.1rem;
+    color:#fdfdfd;
+  }
+
+  .play{
+    cursor: pointer;
+    border: none;
+    color: #fdfdfd;
+    background-color: #52b788;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+
+  .play:hover{
+    color: #000000;
+    background-color: #fdfdfd;
+    transition: all 0.2s ease-in;
+  }
+
+  .share{
+    border: solid 1px #fdfdfd;
+    color: #fdfdfd;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-left: 20px;
+  }
+
+  .share:hover{
+    color: #000000;
+    background-color: #fdfdfd;
+    transition: all 0.2s ease-in;
+  }
+
+  /* media querys */
+
+  @media only screen and (max-width: 600px) {
+
+
+  .album{
+    height: 400px;
+    width: 400px;
+  }
+
+  .hero-content{
+    height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items: center;
+    padding-left: 0%;
+  }
+
+  .album-text{
+    padding: 0 0;
+    width: auto;
+    margin: 0 0 0 0;
+  }
+
+  .album-text h1{
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    color:#fdfdfd;
+  }
+
+  .album-text h2{
+    font-weight: bold;
+    font-size: 2.1rem;
+    color:#fdfdfd;
+  }
+
+  .play{
+    cursor: pointer;
+    border: none;
+    color: #fdfdfd;
+    background-color: #52b788;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+
+  .share{
+    border: solid 1px #fdfdfd;
+    color: #fdfdfd;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+
+  .album {
+    height: auto;
+    width: 90%;
+    margin-top: 100px;
+  }
+
+  .hero-content {
+    height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0%;
+  }
+
+  .album-text {
+    padding: 0;
+    width: auto;
+    margin: 0;
+  }
+
+  .album-text h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    color: #fdfdfd;
+  }
+
+  .album-text h2 {
+    font-weight: bold;
+    font-size: 2.1rem;
+    color: #fdfdfd;
+  }
+
+  .play {
+    cursor: pointer;
+    border: none;
+    color: #fdfdfd;
+    background-color: #52b788;
+    padding: 0.9rem 0.5rem;
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+}
+
+
+
+
+
+
+</style>

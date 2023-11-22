@@ -1,0 +1,132 @@
+@keyframes fadeIn {
+  0% {
+    right: -400px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+.false {
+  position: fixed;
+  right: 0px;
+  background-color: #000000;
+  color: #fdfdfd;
+  width: 420px;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  animation: fadeIn 0.3s;
+  z-index: 5;
+}
+
+.true {
+  position: fixed;
+  right: -1000px;
+  background-color: #000000;
+  color: #fdfdfd;
+  width: 420px;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s ease-in;
+  z-index: 5;
+}
+
+.fa-bars {
+  font-size: 1.3rem;
+  margin-right: 20px;
+  position: fixed;
+  right: 70px;
+  top: 30px;
+  cursor: pointer;
+  color: #fdfdfd;
+  z-index: 5;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+.logo2 {
+  height: 70px;
+  width: 60px;
+}
+
+.fa-x {
+  font-size: 1.2rem;
+  position: fixed;
+  right: 40px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: block;
+  padding: 30px 30px;
+}
+
+.icons-container {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.fa-brands {
+  font-size: 1.3rem;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.fa-brands:hover {
+  color: #52b788;
+  transition: color 0.2s ease-in;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.link:hover {
+  color: #52b788;
+  transition: color 0.2s ease-in;
+}
+
+@media only screen and (max-width: 767px) {
+  .fa-bars {
+    font-size: 1.3rem;
+    margin-right: 20px;
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+    color: #fdfdfd;
+    z-index: 5;
+  }
+
+  .false {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .true {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .icons-container {
+    margin-top: 1rem;
+  }
+
+  .box {
+    padding: 5 px 10px;
+  }
+
+  .dropdown-content {
+    display: block;
+    padding: 15px 30px;
+  }
+}

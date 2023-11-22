@@ -1,0 +1,54 @@
+---
+interface Props {
+  title: string;
+}
+import Logo from "../images/monstercat-logo.webp";
+import { Image } from "astro:assets";
+
+const { title } = Astro.props;
+import Menu from "../components/Menu";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <!-- montserrat font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <Image class="logo" src={Logo} alt="MonstercatLogo" />
+      <Menu client:load />
+    </div>
+    <slot />
+    <script
+      src="https://kit.fontawesome.com/f5c1428806.js"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
+
+<style is:global>
+  body {
+    margin: 0;
+  }
+
+  .logo {
+    position: fixed;
+    left: 30px;
+    top: 30px;
+    height: 40px;
+    width: 40px;
+    z-index: 3;
+  }
+</style>
